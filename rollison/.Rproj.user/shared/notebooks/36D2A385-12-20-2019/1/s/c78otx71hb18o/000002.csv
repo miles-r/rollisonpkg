@@ -1,0 +1,4 @@
+"0","dfc %<>% filter(month > 5 & month < 11) "
+"0","period1c = dfc %>% filter(year < 2006 )"
+"0","period2c = dfc %>% filter( year > 2007 & year < 2014)"
+"0","bothc = bind_rows(period1c, period2c)"

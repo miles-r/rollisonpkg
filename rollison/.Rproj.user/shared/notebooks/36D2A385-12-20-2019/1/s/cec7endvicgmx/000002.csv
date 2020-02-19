@@ -1,0 +1,5 @@
+"0","region_drought %<>% group_by(ams_hay_region, year, month) %>% "
+"0","  summarise( pct_area_severe = max(pct_area), consecutive_weeks = max(consecutive_weeks))"
+"0","dfh = full_join(hay, region_drought, by = c(""year"" = ""year"", ""month"" = ""month"", ""location"" = ""ams_hay_region""))"
+"0","dfc = full_join(corn, region_drought, by = c(""year"" = ""year"", ""month"" = ""month"", ""location"" = ""ams_hay_region""))"
+"0"," dfc %>% filter(location != ""Denver"", location != ""Southwest Nebraska / Southeast Wyoming"")"

@@ -1,0 +1,4 @@
+"0","dfh %<>% filter(month > 5 & month < 11, grade != ""UTILITY"")"
+"0","period1h = dfh %>% filter(year < 2006)"
+"0","period2h = dfh %>% filter( year > 2007 & year < 2014)"
+"0","bothh = bind_rows(period1h, period2h)"
